@@ -24,6 +24,6 @@ namespace Assignment_4
             int NUMBER = int.TryParse(input, out int result) ? result : 0;
 
 #endregion
-        }
+        } 
     }
 }
