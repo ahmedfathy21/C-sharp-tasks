@@ -12,7 +12,6 @@ namespace Dice_game
         {
             while(true)
             {
-
             Console.WriteLine("Welcome to the Dice Game App");
             System.Threading.Thread.Sleep(1000);
             #region Dice Game
