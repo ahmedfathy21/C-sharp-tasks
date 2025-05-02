@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/bin/Debug/net9.0/ArrayList
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/bin/Debug/net9.0/ArrayList.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/bin/Debug/net9.0/ArrayList.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/bin/Debug/net9.0/ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/bin/Debug/net9.0/ArrayList.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/refint/ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ArrayList.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Array_List/ArrayList/obj/Debug/net9.0/ref/ArrayList.dll
