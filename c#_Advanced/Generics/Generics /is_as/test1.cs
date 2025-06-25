@@ -8,13 +8,15 @@ class Program
         object obj1 = "Hello World";
         object obj2 = 42;
 
-        if (obj1 is string)
-        {
-            Console.WriteLine("obj1 is a string");
-            string str = (string)obj1;  // Traditional casting
-            Console.WriteLine($"Value: {str}");
-        }
-
+      #region IS_REGION
+          if (obj1 is string)
+          {
+              Console.WriteLine("obj1 is a string");
+              string str = (string)obj1;  // Traditional casting
+              Console.WriteLine($"Value: {str}");
+          }
+  
+      #endregion
         // Example 2: Using 'as' operator for safe casting
         string text = obj1 as string;  // Will return null if cast fails
         if (text != null)
@@ -27,12 +29,14 @@ class Program
         Console.WriteLine($"Invalid cast result: {invalidCast}");  // Outputs: null
 
         // Example 3: Pattern matching with 'is'
-        object value = 100;
-        if (value is int number)
-        {
-            // 'number' is automatically declared and assigned
-            Console.WriteLine($"Got a number: {number}");
-        }
+        #region IS
+            object value = 100;
+            if (value is int number)
+            {
+                // 'number' is automatically declared and assigned
+                Console.WriteLine($"Got a number: {number}");
+            }
+        #endregion
 
         // Example 4: Type checking with inheritance
         Animal animal = new Dog();
