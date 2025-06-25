@@ -18,15 +18,16 @@ class Program
   
       #endregion
         // Example 2: Using 'as' operator for safe casting
-        string text = obj1 as string;  // Will return null if cast fails
-        if (text != null)
-        {
-            Console.WriteLine($"Successfully cast to string: {text}");
-        }
-
-        // This will return null instead of throwing an exception
-        string invalidCast = obj2 as string;
-        Console.WriteLine($"Invalid cast result: {invalidCast}");  // Outputs: null
+        #region AS_REGION
+            string text = obj1 as string;  // Will return null if cast fails
+            if (text != null)
+            {
+                Console.WriteLine($"Successfully cast to string: {text}");
+            }
+            // This will return null instead of throwing an exception
+            string invalidCast = obj2 as string;
+            Console.WriteLine($"Invalid cast result: {invalidCast}");  // Outputs: null
+        #endregion
 
         // Example 3: Pattern matching with 'is'
         #region IS
