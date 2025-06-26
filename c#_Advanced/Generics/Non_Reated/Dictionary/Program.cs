@@ -16,6 +16,9 @@ class Program
     /// <param name="args">An array of command-line arguments passed to the program.</param>
     static void Main(string[] args)
     {
+            
+        TIGERS tiger = new TIGERS();    
+        tiger.eating();
         Console.WriteLine(FindFirstUnique("leetcode")); // prints 0
         Console.WriteLine(FindFirstUnique("loveleetcode")); // prints 2
         Console.WriteLine(FindFirstUnique("aabb")); // prints -1
@@ -26,7 +29,7 @@ class Program
     /// </summary>
     /// <param name="s">The input string to search for the first unique character.</param>
     /// <returns>
-    /// Returns the zero-based index of the first unique character in the string.
+    /// Returns the zero-based index of the first unique character in the string.   
     /// Returns -1 if there are no unique characters in the string.
     /// </returns>
     static int FindFirstUnique(string s)
