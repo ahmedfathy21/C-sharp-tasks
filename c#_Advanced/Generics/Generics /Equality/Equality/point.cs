@@ -1,4 +1,4 @@
-namespace Equality;
+namespace Generics;
 
 public class point
 {
