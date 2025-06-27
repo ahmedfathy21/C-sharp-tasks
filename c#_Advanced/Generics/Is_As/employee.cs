@@ -1,6 +1,6 @@
 namespace Is_As;
 
-public class Employee
+public class Employee : IEquatable<Employee>
 {
     public string Name { get; set; }
     public int Age { get; set; }
@@ -17,6 +17,19 @@ public class Employee
         Name = name;
         Age = age;
         Department = department;
+    }
+
+    public bool Equals(Employee? employee)
+    {
+        if (employee is not null)
+        {
+            return Name == employee.Name && Age == employee.Age && Department == employee.Department;
+            
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public override bool Equals(object? obj)

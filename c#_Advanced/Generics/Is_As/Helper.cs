@@ -1,9 +1,9 @@
 namespace Is_As;
 
-public class Helper<T>
+public class Helper<T> where T : IEquatable<T>
 
 {
- public int Linear_Search(T[] arr, T value)
+ public static int Linear_Search(T[] arr, T value)
  {
   for (int i = 0; i < arr.Length; i++)
   {
