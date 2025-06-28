@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Is_As
 {
@@ -61,8 +62,8 @@ namespace Is_As
                 new Employee("Ali", 25, "Computer Science"),
                 new Employee("Zeen", 40, "Medicine"),
             };
-            Employee employee = new Employee("Zeen", 40, "Medicine");
-            int index = Helper<Employee>.Linear_Search(employees, employee);
+            Employee employee = new Employee("Zee", 40, "Medicine");
+int index = Helper<Employee>.Linear_Search(employees, employee,EqualityComparer<Employee>.Create(new Employeenameequalitycomarer().Equals));
             Console.WriteLine(index);
         }
     }
