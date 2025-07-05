@@ -3,7 +3,7 @@ using Bubble_sort;
 
 namespace Is_As;
 
-public class Helper<T> where T : IEquatable<T>  , IComparable<T>
+public class Helper<T> where T : class , IComparable<T> ,IEquatable<T>
 
 {
         public static int Linear_Search(T[] arr, T value ,EqualityComparer<T> employeeComparer)
@@ -14,7 +14,6 @@ public class Helper<T> where T : IEquatable<T>  , IComparable<T>
                 if (employeeComparer.Equals(arr[i], value))
                 {
                     return i;
-    
                 }
             }
             return -1;
