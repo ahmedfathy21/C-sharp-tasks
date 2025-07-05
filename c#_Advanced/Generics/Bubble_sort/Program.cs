@@ -9,14 +9,14 @@ class Program
 
         student[] students =
             {
-                new student("John", 20, "cs"),
-                new student("Jane", 23, "phy"),
-                new student("Jake", 25, "math"),
-                new student("Jill", 18, "cardio"),
-                new student("Jake", 28, "cash"),
+                new student("Ahmed", 20, "cs"),
+                new student("zee", 23, "phy"),
+                new student("Fatma", 25, "math"),
+                new student("Salma", 18, "cardio"),
+                new student("Fathy", 28, "cash"),
 
             };
-        Helper<student>.Bouble_sort(students);
+        Helper<student>.bubble_sort(students,new StudentNameComparer());
         foreach (var student in students)
         {
             Console.WriteLine(student);

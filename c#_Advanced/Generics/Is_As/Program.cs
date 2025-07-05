@@ -67,4 +67,5 @@ int index = Helper<Employee>.Linear_Search(employees, employee,EqualityComparer<
             Console.WriteLine(index);
         }
     }
+    
 }

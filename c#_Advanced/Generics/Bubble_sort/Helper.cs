@@ -1,3 +1,6 @@
+using System.Runtime.ExceptionServices;
+using Bubble_sort;
+
 namespace Is_As;
 
 public class Helper<T> where T : IEquatable<T>  , IComparable<T>
@@ -33,6 +36,20 @@ public class Helper<T> where T : IEquatable<T>  , IComparable<T>
             
         }
       
+        
+    }
+    public static void bubble_sort(T[]? array ,IComparer<T> comparer)
+    {
+        if (array is not null)
+        {
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for(int j = 0; j < array.Length - 1 - i; j++)
+                    
+                    if(comparer.Compare(array[j], array[j+1]) > 0)  // ascending sort form low to high sort 
+                        Swap(ref array[j], ref array[j+1]);
+            }
+        }
         
     }
 

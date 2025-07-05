@@ -6,7 +6,7 @@ public class student : IEquatable<student> , IComparable<student>
     public student(string name, int age, string major)
     {
         this.name = name;
-        this.age = age;
+        this.age = age; 
         this.major = major;
     }
 
