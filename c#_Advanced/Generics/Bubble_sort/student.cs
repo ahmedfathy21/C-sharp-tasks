@@ -46,4 +46,4 @@ public bool Equals(student? std)
 {
     return name == std.name && age == std.age && major == std.major;
 }
-}
+}   

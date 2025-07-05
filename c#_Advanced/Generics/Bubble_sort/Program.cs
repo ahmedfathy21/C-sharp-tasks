@@ -16,11 +16,14 @@ class Program
                 new student("Fathy", 28, "cash"),
 
             };
-        Helper<student>.bubble_sort(students,new StudentNameComparer());
+        Helper<student>.bubble_sort(students, new StudentNameComparer());
+       var result =  Helper<student>.Linear_Search(students ,  new student("Fatma", 25, "math"), EqualityComparer<student>.Default);
         foreach (var student in students)
         {
             Console.WriteLine(student);
         }
+
+        Console.WriteLine($"The index of the student is {result}");
     }
 
     
