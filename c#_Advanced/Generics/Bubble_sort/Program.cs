@@ -1,4 +1,9 @@
 ﻿using Is_As;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Bubble_sort;
 
@@ -24,7 +29,18 @@ class Program
         }
 
         Console.WriteLine($"The index of the student is {result}");
+    LinkedList<int> Linkedlist = new LinkedList<int>();
+LinkedListNode<int> node = Linkedlist.AddFirst(10);
+Linkedlist.AddBefore(node, 20);
+Linkedlist.AddAfter(node, 30);
+foreach (int item in Linkedlist)
+    Console.WriteLine($"{item}  ");
+    
+
     }
 
     
 }
+
+
+
