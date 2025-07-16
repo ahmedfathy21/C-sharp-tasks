@@ -3,7 +3,11 @@
 public delegate int StringFuncDelegate(string str);
 
 class Program
-{ 
+{
+    /// <summary>
+    /// The entry point of the program.
+    /// </summary>
+    /// <param name="args">An array of command-line arguments.</param>
     static void Main(string[] args)
     {
        /* #region delegate operation
@@ -32,7 +36,7 @@ class Program
         #endregion*/
 
         #region SortString
-
+        
         string [] array1 = {"Ahmed", "Fatma", "Salma", "Fathy", "zee"};
         SortingTypeDelegate<string> sorttype = SortingType.SortstringTypeDelegateFunAse;
         SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
@@ -43,6 +47,17 @@ class Program
         SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
         foreach (var item in array1)
             Console.WriteLine($" {item}");
+        #endregion
+
+        #region NewMethodsWithLists
+
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5 ,6,7,8,9,10};
+         List<int> index = numbers.FindAll(x => x % 2 == 0);
+         foreach (var VARIABLE in index)
+         {
+             Console.WriteLine(VARIABLE);
+         }
+
         #endregion
     }
 }
