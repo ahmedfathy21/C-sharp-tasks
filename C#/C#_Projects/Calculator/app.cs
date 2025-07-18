@@ -32,9 +32,9 @@ namespace Calculator
             {
                 case "+":
                     return result = num1 + num2;
-                case "-":
+                case "-":lshdfkjhajfhaojhf
                     return result = num1 - num2;
-                case "*":
+                    case "*":
                     return result = num1 * num2;
                 case "/":
                     return result = num1 / num2;

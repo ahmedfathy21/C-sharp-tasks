@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/bin/Debug/net9.0/Company_Evaluation
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/bin/Debug/net9.0/Company_Evaluation.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/bin/Debug/net9.0/Company_Evaluation.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/bin/Debug/net9.0/Company_Evaluation.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/bin/Debug/net9.0/Company_Evaluation.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/refint/Company_Evaluation.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/Company_Evaluation.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Corporate_Clean/Company_Evaluation/obj/Debug/net9.0/ref/Company_Evaluation.dll

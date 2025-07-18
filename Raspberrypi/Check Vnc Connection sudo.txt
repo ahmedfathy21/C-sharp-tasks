@@ -1,0 +1,92 @@
+
+/***********************************************************************************    Author :Ahmed Fathy ********************************************/
+/***********************************************************************************    Date : 5/12/2024 ***********************************************/
+>>Check Vnc Connection
+sudo systemctl status vncserver-x11-serviced.service
+
+
+>> copy files from Raspberry to linux 
+scp Source_Path dest_path
+
+scp PI@10.42.0.120:/home/PI/python.py /home/kakashi/test
+
+>>  copy dirs from Raspberry to linux 
+scp -r PI@10.42.0.120:/home/PI/python.py /home/kakashi/test
+
+/* Commands for Raspberry pi Info */
+
+pinout >>>  to open the GPIO Figure 
+
+lscpu >>> info for the cpu 
+
+free -h >> memory info 
+
+df -h >> same with details
+
+cat /etc/os-release >> Os info 
+
+uname -a >> kernal Version
+
+64-bit ARM ARCH for raspberry pi >> aarch64
+
+tool chain to compile the cross target 32-bit os  >> arm-linux-gnueabuhf-gcc 
+Install >> sudo apt install gcc-arm-linux-gnueabihf
+
+ARM (32-bit)	gcc-arm-linux-gnueabihf 	sudo apt install gcc-arm-linux-gnueabihf
+AArch64 (64-bit ARM)	gcc-aarch64-linux-gnu 	sudo apt install gcc-aarch64-linux-gnu
+ARM Embedded	gcc-arm-none-eabi	sudo apt install gcc-arm-none-eabi
+RISC-V	gcc-riscv64-unknown-elf	sudo apt install gcc-riscv64-unknown-elf
+x86 (32-bit)	gcc-multilib	sudo apt install gcc-multilib
+PowerPC 	gcc-powerpc-linux-gnu	sudo apt install gcc-powerpc-linux-gnu
+SPARC	gcc-sparc64-linux-gnu	sudo apt install gcc-sparc64-linux-gnu
+MIPS	gcc-mips-linux-gnu	sudo apt install gcc-mips-linux-gnu
+
+GPIO if you want to access the gpio >> 
+microchip is between gpiochip512 >> 570 
+so example if you want to access gpio26 >>> echo (26+512) > export , and so on 
+
+For Tracking packages >>  sudo dpkg -L python3-rpi.gpio, and tho...
+gpioset just take the offset ont the gpio >> 26 not (512+26) 
+gpioset is a api from python package you can use it to test fastly something..
+
+Sudo nmap -sn 192.168.1.0/24 >> Mapping the ips of the network
+
+Compiler Which i should use is arm-linux-gnueabihf/ld-linux-armhf.so.3 >> Hardfloat 
+sudo dpkg -L gpiod
+
+gpioinfo >> For more information for the LInes 
+gpiodetect >> Detect the gpio Lines
+cat /sys/kernal/debug/gpio  >> The Gpio Scematic and the Lines 
+
+ctrl+ww >> move between vsc >> 
+
+device tree between the Drivers and the Hardware >> Could Configure the pins as anythng u need depends on the pinout of that 
+the path   
+
+```
+/boot/config.txt      || /boot/config.txt   
+And open the readmefile that can help u to configure the Pins  & its location realted to the config.txt
+overlay/README 
+
+dtoverlay >> Device tree overlay 
+```
+
+
+``` 
+If we want to write a Service We should after write the service move it to this path 
+<< systemd Service >>
+
+/usr/lib/systemd/system/ >> And put it here >> after that 
+sudo systemctl enable <Service_Name>
+
+```
+find . -iname <driver_Name> >> to find the driver if exits
+
+tail -f /dev/ttyS0
+```
+
+Show the debug i this path 
+```
+/sys/kernal/debug
+```
+

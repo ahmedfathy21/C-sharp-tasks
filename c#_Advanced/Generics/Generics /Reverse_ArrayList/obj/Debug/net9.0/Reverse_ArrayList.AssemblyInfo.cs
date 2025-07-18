@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reverse_ArrayList")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94d886e689c23cfc990f73a6d2c027717be924a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c33a6839eb80359ed3c70c56748e46bd2cf5fe5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reverse_ArrayList")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reverse_ArrayList")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/bin/Debug/net9.0/Equality
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/bin/Debug/net9.0/Equality.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/bin/Debug/net9.0/Equality.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/bin/Debug/net9.0/Equality.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/bin/Debug/net9.0/Equality.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/refint/Equality.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/Equality.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Equality/Equality/obj/Debug/net9.0/ref/Equality.dll
