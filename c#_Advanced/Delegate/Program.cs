@@ -1,4 +1,6 @@
-﻿namespace Delegate;
+﻿using System.Collections;
+
+namespace Delegate;
 
 public delegate int StringFuncDelegate(string str);
 
@@ -35,19 +37,19 @@ class Program
        
         #endregion*/
 
-        #region SortString
-        
-        string [] array1 = {"Ahmed", "Fatma", "Salma", "Fathy", "zee"};
-        SortingTypeDelegate<string> sorttype = SortingType.SortstringTypeDelegateFunAse;
-        SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
-        foreach (var item in array1)
-            Console.WriteLine($" {item}");
-        Console.WriteLine("Sorted in descending order");
-        sorttype = SortingType.SortstringTypeDelegateFunDesc;
-        SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
-        foreach (var item in array1)
-            Console.WriteLine($" {item}");
-        #endregion
+        // #region SortString
+        //
+        // string [] array1 = {"Ahmed", "Fatma", "Salma", "Fathy", "zee"};
+        // SortingTypeDelegate<string> sorttype = SortingType.SortstringTypeDelegateFunAse;
+        // SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
+        // foreach (var item in array1)
+        //     Console.WriteLine($" {item}");
+        // Console.WriteLine("Sorted in descending order");
+        // sorttype = SortingType.SortstringTypeDelegateFunDesc;
+        // SortingAlgorithms<string>.BubbleSort(array1 , sorttype);
+        // foreach (var item in array1)
+        //     Console.WriteLine($" {item}");
+        // #endregion
 
         // #region NewMethodsWithLists
         //
@@ -60,10 +62,22 @@ class Program
         //
         // #endregion
 
-        Action action = FunctionReturnDelgate.DelegateAction();
-        action.Invoke();
-        Console.WriteLine(FunctionReturnDelgate.DelegatePredicate()(10));
-        string name = FunctionReturnDelgate.DelegateFunc()(['H','E','L','L','O']);
-        Console.WriteLine(name);
+        // Action action = FunctionReturnDelgate.DelegateAction();
+        // action.Invoke();
+        // Console.WriteLine(FunctionReturnDelgate.DelegatePredicate()(10));
+        // string name = FunctionReturnDelgate.DelegateFunc()(['H','E','L','L','O']);
+        // Console.WriteLine(name);
+        
+        Hashtable hashtable = new Hashtable
+        {   
+            ["Ahmed"] = 10,
+            ["Ali"] = 11,
+            ["Sandy"] = 12,
+        };
+        foreach (DictionaryEntry direcroty in hashtable)
+        {
+            Console.WriteLine($"{direcroty.Key} = {direcroty.Value}");
+            
+        }
     }
 }
