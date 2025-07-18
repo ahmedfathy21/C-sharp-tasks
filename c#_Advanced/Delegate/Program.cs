@@ -49,15 +49,21 @@ class Program
             Console.WriteLine($" {item}");
         #endregion
 
-        #region NewMethodsWithLists
+        // #region NewMethodsWithLists
+        //
+        // List<int> numbers = new List<int> { 1, 2, 3, 4, 5 ,6,7,8,9,10};
+        //  List<int> index = numbers.FindAll(x => x % 2 == 0);
+        //  foreach (var VARIABLE in index)
+        //  {
+        //      Console.WriteLine(VARIABLE);
+        //  }
+        //
+        // #endregion
 
-        List<int> numbers = new List<int> { 1, 2, 3, 4, 5 ,6,7,8,9,10};
-         List<int> index = numbers.FindAll(x => x % 2 == 0);
-         foreach (var VARIABLE in index)
-         {
-             Console.WriteLine(VARIABLE);
-         }
-
-        #endregion
+        Action action = FunctionReturnDelgate.DelegateAction();
+        action.Invoke();
+        Console.WriteLine(FunctionReturnDelgate.DelegatePredicate()(10));
+        string name = FunctionReturnDelgate.DelegateFunc()(['H','E','L','L','O']);
+        Console.WriteLine(name);
     }
 }
