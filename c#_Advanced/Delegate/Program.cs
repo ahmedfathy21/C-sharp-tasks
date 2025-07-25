@@ -12,15 +12,15 @@ class Program
     /// <param name="args">An array of command-line arguments.</param>
     static void Main(string[] args)
     {
-       /* #region delegate operation
+        /* #region delegate operation
 
-        StringFuncDelegate StringDelegate; // Declare the delegate and let it points to null 
-        StringDelegate = StringFunctions.GetCountOfUppercaseLetters; // Initialize the delegate to point to the function 
-        StringDelegate+= StringFunctions.GetCountOfLowercaseLetters; // Add another function to the delegate
-        int result = StringDelegate?.Invoke("Hello World") ?? -1; // Invoke the delegate
-        Console.WriteLine($"The count of uppercase letters is {result}");
+         StringFuncDelegate StringDelegate; // Declare the delegate and let it points to null
+         StringDelegate = StringFunctions.GetCountOfUppercaseLetters; // Initialize the delegate to point to the function
+         StringDelegate+= StringFunctions.GetCountOfLowercaseLetters; // Add another function to the delegate
+         int result = StringDelegate?.Invoke("Hello World") ?? -1; // Invoke the delegate
+         Console.WriteLine($"The count of uppercase letters is {result}");
 
-        #endregion */ 
+         #endregion */
 
         /*#region Sorting Algorithms
 
@@ -34,7 +34,7 @@ class Program
         SortingAlgorithms<int>.BubbleSort(array , sortingtype);
         foreach (var item in array)
             Console.WriteLine($" {item}");
-       
+
         #endregion*/
 
         // #region SortString
@@ -67,17 +67,100 @@ class Program
         // Console.WriteLine(FunctionReturnDelgate.DelegatePredicate()(10));
         // string name = FunctionReturnDelgate.DelegateFunc()(['H','E','L','L','O']);
         // Console.WriteLine(name);
-        
-        Hashtable hashtable = new Hashtable
-        {   
+
+        //    #region Hashtable
+        //    Hashtable hashtable = new Hashtable
+        //    {   
+        //        ["Ahmed"] = 10,
+        //        ["Ali"] = 11,
+        //        ["Sandy"] = 12,
+        //    };
+        //    foreach (DictionaryEntry direcroty in hashtable)
+        //    {
+        //        Console.WriteLine($"{direcroty.Key} = {direcroty.Value}");
+        //        
+        //    }
+        // #endregion
+
+        // #region Dictionary Generic
+        //    Dictionary<string,int>dic = new Dictionary<string, int>() 
+        //    {
+        //        ["Ahmed"] = 10,
+        //        ["Ali"] = 11,
+        //        ["Sandy"] = 12,
+        //    };
+        //    foreach (var item in dic.Keys)
+        //        Console.WriteLine($"{item} = {dic[item]}");
+        // #endregion
+
+        // #region Indexer Generic
+        //
+        // // Using the indexer as a getter  
+        // if(dic.ContainsKey("Ahmed")) // returns true 
+        // Console.WriteLine($" The value of the key Ahmed is {dic["Ahmed"]}"); // not safely might be throwing an exception 
+        // // Using the indexer as a setter  
+        // dic["Ahmed"] = 100;
+        // dic["Alil"] = 101;
+        //
+        // foreach (var item in dic.Keys)
+        //     Console.WriteLine($"{item} = {dic[item]}");
+        // #endregion
+
+        //  #region Dictionary Classes
+        //
+        //  Employee employee01 = new Employee(1,"Ahmed", 12, 10000);
+        //  Employee employee02 = new Employee(2,"Fatma", 13, 10000); 
+        //  Employee employee03 = new Employee(3,"Ali", 14, 10000);
+        //     
+        //  
+        //  Dictionary<Employee, string> employes = new Dictionary<Employee, string>(new EmployeeEqualityIdComparere())
+        //  {
+        //      [employee01] = "1st",
+        //      [employee02]  = "2nd",
+        //      [employee03] = "3rd"
+        //  };
+        //  foreach (KeyValuePair<Employee,string> employe in employes)
+        //  {
+        //      Console.WriteLine($" {employe.Key.Id}{employe.Key.Name} , {employe.Key.Age} , {employe.Key.Salary}  {employe.Value}");
+        //  }
+        //  Employee employee04 = new Employee(4,"Ali", 14, 10000);
+        //  employes.Add(employee04,"4th");
+        //  
+        //  foreach (var employe in employes)
+        //  {
+        //      Console.WriteLine($" {employe.Key.Id}{employe.Key.Name} , {employe.Key.Age} , {employe.Key.Salary}  {employe.Value}");
+        //  }
+        //
+        //  Employee employee05 = new Employee(5,"Fatma", 13, 10000);
+        //  employes.Add(employee05 , "5th");
+        //  foreach (var employe in employes)
+        //  {
+        //      Console.WriteLine($" {employe.Key.Id}{employe.Key.Name} , {employe.Key.Age} , {employe.Key.Salary}  {employe.Value}");
+        //  }
+        //  #endregion
+        // }
+
+        #region Sorted Dictionary
+
+        SortedDictionary<string, int> sorteddic = new SortedDictionary<string, int>(new SortedString()) 
+        {
+            ["Sandy"] = 12,
+            ["Fatma"] = 13,
+            ["Zee"] = 14,
+            ["Nancy"] = 15,
+            ["Salma"] = 16,
+            ["Ali"] = 17,
             ["Ahmed"] = 10,
             ["Ali"] = 11,
-            ["Sandy"] = 12,
+           
         };
-        foreach (DictionaryEntry direcroty in hashtable)
+        foreach (var i in sorteddic)
         {
-            Console.WriteLine($"{direcroty.Key} = {direcroty.Value}");
-            
+            Console.WriteLine(i);
         }
+
+
+        #endregion
+
     }
 }
