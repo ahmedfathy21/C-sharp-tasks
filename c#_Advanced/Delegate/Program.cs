@@ -140,27 +140,74 @@ class Program
         //  #endregion
         // }
 
-        #region Sorted Dictionary
+        // #region Sorted Dictionary
+        //
+        // SortedDictionary<string, int> sorteddic = new SortedDictionary<string, int>(new SortedString()) 
+        // {
+        //     ["Sandy"] = 12,
+        //     ["Fatma"] = 13,
+        //     ["Zee"] = 14,
+        //     ["Nancy"] = 15,
+        //     ["Salma"] = 16,
+        //     ["Ali"] = 17,
+        //     ["Ahmed"] = 10,
+        //     ["Ali"] = 11,
+        //    
+        // };
+        // foreach (var i in sorteddic)
+        // {
+        //     Console.WriteLine(i);
+        // }
+        //
+        //
+        // #endregion
+        //
+        // #region HashSet
+        //
+        // HashSet<string> names = new HashSet<string>()
+        // {
+        //     "Ahmed",
+        //     "Fatma",
+        //     "Zee",
+        //     "Ahmed",
+        // };
+        //
+        // foreach (string name in names)
+        // {
+        //     Console.WriteLine(name);
+        // }
+        //
+        // HashSet<Employee> employees = new HashSet<Employee>()
+        // {
+        //     new Employee(1, "Ahmed", 12, 10000),
+        //     new Employee(2, "Ahmed", 12, 10000),
+        //     new Employee(3, "Ali", 14, 10000),
+        //     new Employee(4, "Ali", 14, 10000),
+        // };
+        // foreach (var employee in employees)
+        //     Console.WriteLine(employee);
+        //
+        //
+        // #endregion
+        #region SortedSet
 
-        SortedDictionary<string, int> sorteddic = new SortedDictionary<string, int>(new SortedString()) 
+        SortedSet<int> numbers = new SortedSet<int>()
         {
-            ["Sandy"] = 12,
-            ["Fatma"] = 13,
-            ["Zee"] = 14,
-            ["Nancy"] = 15,
-            ["Salma"] = 16,
-            ["Ali"] = 17,
-            ["Ahmed"] = 10,
-            ["Ali"] = 11,
-           
-        };
-        foreach (var i in sorteddic)
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9, };
+        List <int> ListedNumbers = numbers.Reverse().ToList();
+        foreach (var Item in ListedNumbers)
         {
-            Console.WriteLine(i);
+            Console.WriteLine(Item);
+            
         }
-
-
         #endregion
-
     }
 }
