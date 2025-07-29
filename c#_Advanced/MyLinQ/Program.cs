@@ -12,17 +12,29 @@ class Program
         var name = "Ahmed";
 
         // dynamic don`t need have to be defined 
-        dynamic name2 = "Ahmed";
+        dynamic name2 = "Ahmed"; 
+        
+        
+        // anonymous Type 
+         var person = new { name = "Ahmed", age = 20 };
+         var person2 = new { Name = "Ahmed", age = 20 };
+         Console.WriteLine(person.Equals(person2));
+         Console.WriteLine(person.GetType());
+         
+         /* person.name = "Fatma";   no option to change the Value of the anonymous data type after the creation */
 
-
+         
+         
 
         #endregion
 
+        #region LINQ!
+        
+        
+        
+        #endregion
     }
 
-    dynamic print(dynamic name)
-    {
-
-return name;
-    }
+ 
+  
 }
