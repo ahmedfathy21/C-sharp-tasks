@@ -21,7 +21,9 @@ class Program
          Console.WriteLine(person.Equals(person2));
          Console.WriteLine(person.GetType());
          
-         /* person.name = "Fatma";   no option to change the Value of the anonymous data type after the creation */
+         /* person.name = "Fatma";   no option to change the Value of the anonymous data type after th  e creation */
+         
+        
 
          
          
@@ -29,9 +31,27 @@ class Program
         #endregion
 
         #region LINQ!
+
+        #region Fluent Syntax
+
+        /* Fluent syntax Methods as a class member from Enumerable */
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        var result=numbers.Where(number => number % 2 == 0);
+        foreach (var item in result)
+            Console.WriteLine(item);
         
-        
-        
+
+        #endregion
+
+        #region Query Syntax
+        /* Easier when using Join Or GroupBy */
+        var result01 = from N in numbers where N % 2 != 0 select N;
+        foreach(var item in result01)
+            Console.WriteLine(item);
+            
+
+        #endregion
+
         #endregion
     }
 
