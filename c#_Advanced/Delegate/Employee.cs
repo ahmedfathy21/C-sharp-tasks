@@ -30,5 +30,9 @@ public class Employee
     {
         return HashCode.Combine(Name, Age, Salary);
     }
+    public override string ToString()
+    {
+        return $"Name: {Name}, Age: {Age}, Salary: {Salary}";
+    }
 }
 
