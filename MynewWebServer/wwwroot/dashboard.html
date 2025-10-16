@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Dashboard - My Web Server</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .endpoint-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            border-left: 4px solid #3498db;
+        }
+        
+        .endpoint-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .endpoint-url {
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #e74c3c;
+            margin: 0.5rem 0;
+        }
+        
+        .test-button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 0.5rem;
+        }
+        
+        .test-button:hover {
+            background: #229954;
+        }
+        
+        .response-area {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .response-area.show {
+            display: block;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        
+        .status-success {
+            background: #27ae60;
+        }
+        
+        .status-error {
+            background: #e74c3c;
+        }
+        
+        .status-pending {
+            background: #f39c12;
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="container">
+            <a href="/" class="nav-brand">🚀 My Web Server</a>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index2.html">Features</a></li>
+                <li><a href="/dashboard.html">API Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>📊 API Dashboard</h1>
+        <p>Test all available API endpoints and view their responses in real-time.</p>
+        
+        <div class="dashboard">
+            <div class="endpoint-card">
+                <h3>👋 Hello Endpoint</h3>
+                <p>A simple greeting endpoint that returns JSON data.</p>
+                <div class="endpoint-url">GET /hello</div>
+                <button class="test-button" onclick="testEndpoint('/hello', 'hello-response')">
+                    <span class="status-indicator" id="hello-status"></span>
+                    Test Endpoint
+                </button>
+                <div class="response-area" id="hello-response"></div>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>ℹ️ Server Info</h3>
+                <p>Detailed information about the server including uptime and features.</p>
+                <div class="endpoint-url">GET /api/info</div>
+                <button class="test-button" onclick="testEndpoint('/api/info', 'info-response')">
+                    <span class="status-indicator" id="info-status"></span>
+                    Test Endpoint
+                </button>
+                <div class="response-area" id="info-response"></div>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>📈 Server Status</h3>
+                <p>Current server status and runtime information.</p>
+                <div class="endpoint-url">GET /api/status</div>
+                <button class="test-button" onclick="testEndpoint('/api/status', 'status-response')">
+                    <span class="status-indicator" id="status-status"></span>
+                    Test Endpoint
+                </button>
+                <div class="response-area" id="status-response"></div>
+            </div>
+            
+            <div class="endpoint-card">
+                <h3>💚 Health Check</h3>
+                <p>Simple health check endpoint for monitoring.</p>
+                <div class="endpoint-url">GET /health</div>
+                <button class="test-button" onclick="testEndpoint('/health', 'health-response')">
+                    <span class="status-indicator" id="health-status"></span>
+                    Test Endpoint
+                </button>
+                <div class="response-area" id="health-response"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🔧 API Testing Tools</h2>
+            <p>Use the buttons above to test each endpoint. The responses will be displayed below each endpoint card.</p>
+            
+            <h3>📋 Response Format</h3>
+            <ul>
+                <li><strong>JSON endpoints</strong> - Formatted JSON responses</li>
+                <li><strong>Text endpoints</strong> - Plain text responses</li>
+                <li><strong>Status indicators</strong> - Visual feedback for request status</li>
+            </ul>
+            
+            <h3>🌐 CORS Information</h3>
+            <p>This server has CORS enabled, allowing cross-origin requests from any domain. 
+               In production, you should configure CORS to only allow specific domains for security.</p>
+        </div>
+        
+        <div class="card">
+            <h2>📚 Usage Examples</h2>
+            <h3>cURL Examples:</h3>
+            <div class="endpoint-url">curl http://localhost:5153/hello</div>
+            <div class="endpoint-url">curl http://localhost:5153/api/info</div>
+            <div class="endpoint-url">curl http://localhost:5153/health</div>
+            
+            <h3>JavaScript Fetch Examples:</h3>
+            <div class="endpoint-url">
+fetch('/api/info')
+  .then(response => response.json())
+  .then(data => console.log(data));
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Web Server - Built with .NET Core 9.0</p>
+        <p>🚀 Lightweight • ⚡ Fast • 🔒 Secure</p>
+    </footer>
+
+    <script>
+        async function testEndpoint(url, responseId) {
+            const responseArea = document.getElementById(responseId);
+            const statusElement = document.getElementById(responseId.replace('-response', '-status'));
+            
+            // Show loading state
+            statusElement.className = 'status-indicator status-pending';
+            responseArea.textContent = 'Loading...';
+            responseArea.classList.add('show');
+            
+            try {
+                const response = await fetch(url);
+                const contentType = response.headers.get('content-type');
+                
+                let data;
+                if (contentType && contentType.includes('application/json')) {
+                    data = await response.json();
+                    responseArea.textContent = JSON.stringify(data, null, 2);
+                } else {
+                    data = await response.text();
+                    responseArea.textContent = data;
+                }
+                
+                // Show success state
+                statusElement.className = 'status-indicator status-success';
+                
+            } catch (error) {
+                // Show error state
+                statusElement.className = 'status-indicator status-error';
+                responseArea.textContent = `Error: ${error.message}`;
+            }
+        }
+        
+        // Auto-test all endpoints on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                testEndpoint('/hello', 'hello-response');
+            }, 500);
+            
+            setTimeout(() => {
+                testEndpoint('/api/info', 'info-response');
+            }, 1000);
+            
+            setTimeout(() => {
+                testEndpoint('/api/status', 'status-response');
+            }, 1500);
+            
+            setTimeout(() => {
+                testEndpoint('/health', 'health-response');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
