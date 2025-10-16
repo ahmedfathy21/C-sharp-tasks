@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/bin/Debug/net9.0/Reverse_ArrayList
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/bin/Debug/net9.0/Reverse_ArrayList.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/bin/Debug/net9.0/Reverse_ArrayList.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/bin/Debug/net9.0/Reverse_ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/bin/Debug/net9.0/Reverse_ArrayList.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/refint/Reverse_ArrayList.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/Reverse_ArrayList.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Generics /Reverse_ArrayList/obj/Debug/net9.0/ref/Reverse_ArrayList.dll

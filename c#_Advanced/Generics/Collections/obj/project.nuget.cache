@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DXp1H4kNwWA=",
+  "success": true,
+  "projectFilePath": "/home/kakashi/Documents/c#_Advanced/Generics/Collections/Generic_Collections.csproj",
+  "expectedPackageFiles": [
+    "/home/kakashi/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
