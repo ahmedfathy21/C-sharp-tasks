@@ -1,5 +1,0 @@
-
-# Except C# files
-!*.cs
-*.Except
-*.idea
