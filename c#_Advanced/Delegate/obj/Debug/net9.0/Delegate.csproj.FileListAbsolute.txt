@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Delegate/bin/Debug/net9.0/Delegate
+/home/kakashi/Documents/c#_Advanced/Delegate/bin/Debug/net9.0/Delegate.deps.json
+/home/kakashi/Documents/c#_Advanced/Delegate/bin/Debug/net9.0/Delegate.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Delegate/bin/Debug/net9.0/Delegate.dll
+/home/kakashi/Documents/c#_Advanced/Delegate/bin/Debug/net9.0/Delegate.pdb
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.dll
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/refint/Delegate.dll
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.pdb
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/Delegate.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Delegate/obj/Debug/net9.0/ref/Delegate.dll

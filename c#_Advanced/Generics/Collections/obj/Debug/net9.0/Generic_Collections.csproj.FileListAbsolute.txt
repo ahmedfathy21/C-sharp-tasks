@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/bin/Debug/net9.0/Generic_Collections
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/bin/Debug/net9.0/Generic_Collections.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/bin/Debug/net9.0/Generic_Collections.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/bin/Debug/net9.0/Generic_Collections.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/bin/Debug/net9.0/Generic_Collections.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/refint/Generic_Collections.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/Generic_Collections.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Collections/obj/Debug/net9.0/ref/Generic_Collections.dll

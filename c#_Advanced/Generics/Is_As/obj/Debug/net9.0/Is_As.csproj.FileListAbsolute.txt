@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/bin/Debug/net9.0/Is_As
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/bin/Debug/net9.0/Is_As.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/bin/Debug/net9.0/Is_As.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/bin/Debug/net9.0/Is_As.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/bin/Debug/net9.0/Is_As.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/refint/Is_As.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/Is_As.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Is_As/obj/Debug/net9.0/ref/Is_As.dll

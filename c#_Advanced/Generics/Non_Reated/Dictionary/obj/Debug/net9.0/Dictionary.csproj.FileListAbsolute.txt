@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/bin/Debug/net9.0/Dictionary
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/bin/Debug/net9.0/Dictionary.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/bin/Debug/net9.0/Dictionary.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/bin/Debug/net9.0/Dictionary.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/bin/Debug/net9.0/Dictionary.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/refint/Dictionary.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/Dictionary.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Non_Reated/Dictionary/obj/Debug/net9.0/ref/Dictionary.dll

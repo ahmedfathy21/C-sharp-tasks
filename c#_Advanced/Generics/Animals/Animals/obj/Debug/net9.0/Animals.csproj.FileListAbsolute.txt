@@ -1,0 +1,15 @@
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.GeneratedMSBuildEditorConfig.editorconfig
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.AssemblyInfoInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.AssemblyInfo.cs
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.csproj.CoreCompileInputs.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.sourcelink.json
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/bin/Debug/net9.0/Animals
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/bin/Debug/net9.0/Animals.deps.json
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/bin/Debug/net9.0/Animals.runtimeconfig.json
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/bin/Debug/net9.0/Animals.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/bin/Debug/net9.0/Animals.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/refint/Animals.dll
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.pdb
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/Animals.genruntimeconfig.cache
+/home/kakashi/Documents/c#_Advanced/Generics/Animals/Animals/obj/Debug/net9.0/ref/Animals.dll

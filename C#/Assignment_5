@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter the main string:");
+        string mainString = Console.ReadLine();
+
+        Console.WriteLine("Enter the starting index:");
+        int startIndex = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the length of the substring:");
+        int length = int.Parse(Console.ReadLine());
+
+        if (startIndex >= 0 && startIndex + length <= mainString.Length)
+        {
+            string substring = mainString.Substring(startIndex, length);
+            Console.WriteLine("Extracted substring: " + substring);
+        }
+        else
+        {
+            Console.WriteLine("Invalid start index or length.");
+        }
+    }
+}

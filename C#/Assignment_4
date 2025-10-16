@@ -1,0 +1,29 @@
+using System;
+using System.Globalization;
+namespace Assignment_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region Assignment_4 >> try to convert from the string to int
+
+            string input = "123abcd";
+            try
+            {
+
+            int num = Convert.ToInt32(input);
+             Console.WriteLine("the number is : "  +num);
+
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Input string is not contains non-numeric char and cannot be converted to integer.");
+                
+            }
+            int NUMBER = int.TryParse(input, out int result) ? result : 0;
+
+#endregion
+        } 
+    }
+}
