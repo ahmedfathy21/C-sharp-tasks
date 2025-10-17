@@ -40,6 +40,8 @@ namespace TO_DO_LIST
                 break;
                     case "4":
                         {
+                            System.Console.WriteLine("Exiting the application. Goodbye!");
+                            System.Threading.Thread.Sleep(1000);
                             Environment.Exit(0);
                         }
                 break;
