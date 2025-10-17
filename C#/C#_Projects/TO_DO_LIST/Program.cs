@@ -38,8 +38,10 @@ namespace TO_DO_LIST
             case "3":
             remove_task();
                 break;
-            case "4":
-                Console.WriteLine("Exit");
+                    case "4":
+                        {
+                            Environment.Exit(0);
+                        }
                 break;
             default:
                 Console.WriteLine("Invalid option");
