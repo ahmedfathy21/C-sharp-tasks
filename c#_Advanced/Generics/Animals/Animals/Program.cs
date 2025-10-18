@@ -1,48 +1,20 @@
-﻿namespace Animals;
+﻿using System;
+namespace Animals;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        Eagle L = new Eagle();
-        Animals E =  L;
-
-        if (E is Falcon)
+        Animals names = new Animals()
         {
-            Console.WriteLine("Falcon");
-            
-        }
-        else
-        {
-            Console.WriteLine("not falcon");
-        }
+            [0] = "Lion",
+            [1] = "Tiger",
+            [2] = "Elephant"
+        };
+        Console.WriteLine(names[0]);
+        Console.WriteLine(names[1]);
+        Console.WriteLine(names[2]);    
     }
 }
 
-class Animals
-{
-    void moving()
-    {
-        Console.WriteLine("Moving Animals");
-    }
-}
 
-class Eagle : Animals
-
-{
-    void flying()
-    {
-        Console.WriteLine("Flying Animals");
-    }
-
-
-}
-
-class Falcon : Animals
-    {
-        void Falcon_Flying()
-        {
-            Console.WriteLine("Flying Fal con");
-        }
-    }
