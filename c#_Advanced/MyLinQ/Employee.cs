@@ -4,33 +4,46 @@ using System.Reflection.Metadata;
 
 namespace MyLinQ;
 
-public class Employee : IEquatable<Employee> , IEnumerable<Employee> , IEqualityComparer<Employee>
+/// <summary>
+/// Represents an employee with properties such as ID, Name, Age, and Salary.
+/// </summary>
+/// <remarks>
+/// This class implements the IEquatable<Employee>, IEnumerable<Employee>, and IEqualityComparer<Employee> interfaces
+/// to provide equality comparison and enumeration features for Employee objects.
+/// </remarks>
+public class Employee : IEnumerable<Employee>
 {
-    public Employee()
+   
+    public Employee(int id, string firstName, string lastName, int age, decimal salary, bool isManger, int departmentId)
     {
+        Id = id;
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
+        Salary = salary;
+        IsManger = isManger;
+        DepartmentId = departmentId;
     }
 
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public int Salary { get; set; }
+    public Employee()
+    {
+        
+    }
 
+
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+    public decimal Salary { get; set; }
+    public bool IsManger { get; set; }
+    
+    public int DepartmentId { get; set; }
+    
     public bool Equals(Employee? other)
     {
         if (other is null) return false;
-        return this.Id == other.Id && this.Name == other.Name && this.Age == other.Age && this.Salary == other.Salary;
-    }
-    public override bool Equals(object? obj)
-    {
-        if (obj is null || obj.GetType() != typeof(Employee)) return false;
-        Employee emp = (Employee)obj;
-        return this.Id == emp.Id && this.Name == emp.Name && this.Age == emp.Age && this.Salary == emp.Salary;
-    }
-
-    public bool Equals(Employee? x, Employee? y)
-    {
-        if (x is null || y is null) return false;
-        return x.Id == y.Id && x.Name == y.Name && x.Age == y.Age && x.Salary == y.Salary;
+        return this.Id == other.Id && this.FirstName == other.FirstName && this.Age == other.Age && this.Salary == other.Salary && this.LastName == other.LastName;
     }
 
     public IEnumerator<Employee> GetEnumerator()
@@ -38,18 +51,27 @@ public class Employee : IEquatable<Employee> , IEnumerable<Employee> , IEquality
         throw new NotImplementedException();
     }
 
-    public override int GetHashCode()
+    public override bool Equals(object? obj)
     {
-        throw new NotImplementedException();
+        if (obj is null || obj.GetType() != typeof(Employee)) return false;
+        Employee emp = (Employee)obj;
+        return this.Id == emp.Id && this.FirstName == emp.FirstName && this.Age == emp.Age && this.Salary == emp.Salary && this.LastName == emp.LastName;
     }
 
-    public int GetHashCode([DisallowNull] Employee obj)
+    public override string ToString()
     {
-        throw new NotImplementedException();
+        return "$ FirstName: " + FirstName + " LastName: " + LastName + " Age: " + Age + " Salary: " + Salary + " IsManger: " + IsManger + " DepartmentId: " + DepartmentId + "";
     }
 
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
     }
+
+    public bool Equals(Employee? x, Employee? y)
+    {
+        if (x is null || y is null) return false;
+        return x.Id == y.Id && x.FirstName == y.FirstName && x.Age == y.Age && x.Salary == y.Salary && x.LastName == y.LastName;
+    }
+    
 }
