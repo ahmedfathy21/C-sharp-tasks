@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Extensions;
 
 namespace MyLinQ;
 class Program
@@ -13,22 +12,55 @@ class Program
     {
         
         #region C# KeyWords
-
+        
+        // string [] groups = { "Fruits", "Vegetables", "Meat", "Dairy" };
+        // IEnumerable<IGrouping<char , string >> queryFoodGroups = from item in groups group item by item[0];
+        //
+        // // Option 1: Show group key and all items in each group
+        // foreach (var group in queryFoodGroups)
+        // {
+        //     Console.WriteLine($"Group : {group.Key}"); 
+        //     foreach(var item in group)
+        //         Console.WriteLine($"    {item}");
+        //     Console.WriteLine();
+        // }
         
 
         List<Department> DepartmenList = Data.GetDepartments();
         List<Employee> EmplyeeList = Data.GetEmployess();
+         // var result = EmplyeeList.Select( e => new { e.FirstName, e.LastName, e.Salary , e.Age , e.Id }).GroupBy(item => item.FirstName[0]).ToList();
+         var result = from e in EmplyeeList
+             select new
+             {
+                 FirstName = e.FirstName = " " ,
+                 LastName = e.LastName + "",
+                 Salary = e.Salary,
+                 Age = e.Age,
+                 Id = e.Id,
+             }; 
+         var resultegroup = from emp in result 
+                         group emp by emp.FirstName[0];
+         foreach (var item in resultegroup)
+         {
+             Console.WriteLine(item.Key);
+             foreach (var item1 in item)
+             {
+                 Console.WriteLine($"    {item1.FirstName} {item1.LastName} {item1.Salary} {item1.Age} {item1.Id}" );
+             }
+             Console.WriteLine();
+         }
+         Console.ReadKey();
         
-        var FilteredEmployee = EmplyeeList.Where(employee => employee.FirstName == "Ahmed").ToList();
-        foreach ( var item in FilteredEmployee)
-            Console.WriteLine(item);
-        var MaxSalary = EmplyeeList.Max(employee => employee.Salary);
-        var AverageSalary = EmplyeeList.Average(employee => employee.Salary);
-        var SumSalary = EmplyeeList.Sum(employee => employee.Salary);
-        Console.WriteLine(MaxSalary);
-        var FilteredDepartments = DepartmenList.Where(department => department.LongName == "Human Resource");
-        foreach (var item in FilteredDepartments)
-            Console.WriteLine(item);
+        // var FilteredEmployee = EmplyeeList.Where(employee => employee.FirstName == "Ahmed").ToList();
+        // foreach ( var item in FilteredEmployee)
+        //     Console.WriteLine(item);
+        // var MaxSalary = EmplyeeList.Max(employee => employee.Salary);
+        // var AverageSalary = EmplyeeList.Average(employee => employee.Salary);
+        // var SumSalary = EmplyeeList.Sum(employee => employee.Salary);
+        // Console.WriteLine(MaxSalary);
+        // var FilteredDepartments = DepartmenList.Where(department => department.LongName == "Human Resource");
+        // foreach (var item in FilteredDepartments)
+        //     Console.WriteLine(item);
         // The var keyword don`t has something special like int , string
         // can`t be initialized as a null or not initialized must be initialized 
         // not most properly secured , Implicitly data type

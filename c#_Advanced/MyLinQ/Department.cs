@@ -13,8 +13,6 @@ public class Department
         return base.Equals(obj);
     }
 
-    public override string ToString()
-    {
-        return $" DepartmentId : {DepartmentId} , ShortName : {ShortName} , LongName : {LongName}";
-    }
+    public override string ToString() =>  $" DepartmentId : {DepartmentId} , ShortName : {ShortName} , LongName : {LongName}";
+    
 }
