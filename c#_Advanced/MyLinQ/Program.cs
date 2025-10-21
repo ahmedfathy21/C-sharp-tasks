@@ -64,9 +64,11 @@ class Program
             Console.WriteLine();
         }
             
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        var filteredNumbers = numbers.Where(num => num  > 1  && num < 3).Sum();
+        Console.WriteLine(filteredNumbers);
 
-    #endregion
-
+        #endregion 
         // List<Department> DepartmenList = Data.GetDepartments();
         // List<Employee> EmplyeeList = Data.GetEmployess();
         //  var result = EmplyeeList.Select( e => new { e.FirstName, e.LastName, e.Salary , e.Age , e.Id }).OrderBy(item => item.Salary).ToList().First();
