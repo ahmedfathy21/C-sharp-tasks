@@ -10,11 +10,18 @@ using EntityFrameWork.Models;
 
 class Program
 {
+    /// <summary>
+    /// Main entry point for the application. Initializes the configuration, database context,
+    /// and demonstrates basic database operations with Entity Framework Core using MySQL.
+    /// </summary>
+    /// <param name="args">An array of command line arguments passed to the application.</param>
+    /// <returns>A Task representing the asynchronous operation of the Main method.</returns>
     static async Task Main(string[] args)
     {
         Console.WriteLine("🚀 Starting Entity Framework MySQL App...\n");
 
-        // Load configuration
+
+        // setup the configuration and read the Json file
         var builder = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("Appsettings.json", optional: false, reloadOnChange: true)
@@ -38,6 +45,7 @@ class Program
                 .LogTo(Console.WriteLine, LogLevel.Information)
         );
 
+        // Get the database context from the DI container and run some queries
         var serviceProvider = services.BuildServiceProvider();
         var db = serviceProvider.GetRequiredService<AppDbContext>();
 
@@ -45,29 +53,48 @@ class Program
         await db.Database.EnsureCreatedAsync();
 
         Console.WriteLine("💾 Adding sample wallets...");
-        db.Wallets.AddRange(
-            new Wallet { Holder = "Ahmad", Balance = 10000 },
-            new Wallet { Holder = "Reem", Balance = 5000 }
-        );
-        await db.SaveChangesAsync();
+        // db.Wallets.AddRange(
+        //     new Wallet { Holder = "Ahmad", Balance = 10000 },
+        //     new Wallet { Holder = "Reem", Balance = 5000 }
+        // );
+        // await db.SaveChangesAsync();
+        var holder = "Ali";
+        var balance = 5000m;
+
+        await db.Database.ExecuteSqlRawAsync("CALL AddWallet({0}, {1})","Ali", 400);
+        Console.WriteLine($"✅ Wallet for {holder} added successfully!");
+
+        
+        Console.WriteLine("\n📞 Calling stored procedure...");
+         var wallets = await db.Wallets
+            .FromSqlRaw("CALL GetAllWallets()")
+            .ToListAsync();
+        
+        foreach (var wallet in wallets) 
+            Console.WriteLine(wallet);
+        
+        // Console.WriteLine("\n📊 Current Wallets (using await foreach):");
+        // await foreach (var wallet in db.Wallets)
+        // {
+        //     Console.WriteLine($"Holder: {wallet.Holder}");
+        //     Console.WriteLine($"Balance: {wallet.Balance}");
+        //     Console.WriteLine($" • ID: {wallet.Id}, Holder: {wallet.Holder}, Balance: {wallet.Balance}");
+        // }
 
         Console.WriteLine("\n📊 Current Wallets:");
-        foreach (var w in db.Wallets)
-            Console.WriteLine($" • ID: {w.Id}, Holder: {w.Holder}, Balance: {w.Balance}");
 
-        Console.WriteLine("\n✅ Done. Press any key to exit...");
-        Console.ReadKey();
-    }
-
-    // Detect if a string is Base64 (encrypted)
-    static bool IsEncrypted(string s)
-    {
-        try
+        static bool IsEncrypted(string s)
         {
-            Convert.FromBase64String(s);
-            return true;
+            try
+            {
+                Convert.FromBase64String(s);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
-        catch { return false; }
     }
 
     // AES encryption helper

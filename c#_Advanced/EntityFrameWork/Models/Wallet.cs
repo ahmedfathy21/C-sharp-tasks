@@ -10,4 +10,6 @@ public partial class Wallet
     public string Holder { get; set; } = null!;
 
     public decimal Balance { get; set; }
+    
+    public override string ToString() => $" {Id} - {Holder} - {Balance}";
 }
